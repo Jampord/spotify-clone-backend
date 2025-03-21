@@ -11,12 +11,15 @@ import albumsRoutes from "./routes/albums.route.js";
 import statsRoutes from "./routes/stats.route.js";
 import fileUpload from "express-fileupload";
 import path from "path";
+import cors from "cors";
 
 dotenv.config();
 
 const __dirname = path.resolve();
 const app = express();
 const PORT = process.env.PORT;
+
+app.use(cors());
 
 app.use(express.json()); // to parse or use req.body (on routes)
 app.use(clerkMiddleware()); // will add auth to req obj. example: req.auth.userId
