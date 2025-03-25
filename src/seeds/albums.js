@@ -138,28 +138,28 @@ const seedDatabase = async () => {
         title: "Urban Nights",
         artist: "Various Artists",
         imageUrl: "/albums/1.jpg",
-        releaseDate: 2024,
+        releaseDate: new Date(2024, Math.floor(Math.random() * 12), Math.floor(Math.random() * 28) + 1), // Random date in 2024
         songs: createdSongs.slice(0, 4).map((song) => song._id),
       },
       {
         title: "Coastal Dreaming",
         artist: "Various Artists",
         imageUrl: "/albums/2.jpg",
-        releaseDate: 2024,
+        releaseDate: new Date(2024, Math.floor(Math.random() * 12), Math.floor(Math.random() * 28) + 1), // Random date in 2024
         songs: createdSongs.slice(4, 8).map((song) => song._id),
       },
       {
         title: "Midnight Sessions",
         artist: "Various Artists",
         imageUrl: "/albums/3.jpg",
-        releaseDate: 2024,
+        releaseDate: new Date(2024, Math.floor(Math.random() * 12), Math.floor(Math.random() * 28) + 1), // Random date in 2024
         songs: createdSongs.slice(8, 11).map((song) => song._id),
       },
       {
         title: "Eastern Dreams",
         artist: "Various Artists",
         imageUrl: "/albums/4.jpg",
-        releaseDate: 2024,
+        releaseDate: new Date(2024, Math.floor(Math.random() * 12), Math.floor(Math.random() * 28) + 1), // Random date in 2024
         songs: createdSongs.slice(11, 14).map((song) => song._id),
       },
     ];
